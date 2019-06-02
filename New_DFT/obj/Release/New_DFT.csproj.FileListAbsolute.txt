@@ -93,3 +93,4 @@ E:\New_DFT\New_DFT\obj\Release\New_DFT.csproj.CoreCompileInputs.cache
 E:\New_DFT\New_DFT\obj\Release\New_DFT.csproj.CopyComplete
 E:\New_DFT\New_DFT\obj\Release\New_DFT.exe
 E:\New_DFT\New_DFT\obj\Release\New_DFT.pdb
+E:\New_DFT\New_DFT\obj\Release\New_DFT.csprojAssemblyReference.cache
