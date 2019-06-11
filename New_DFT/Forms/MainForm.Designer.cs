@@ -29,9 +29,14 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.fluentDesignFormContainer1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormContainer();
-            this.gridview = new DevExpress.XtraGrid.GridControl();
-            this.sub_gridview = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.accordionControl1 = new DevExpress.XtraBars.Navigation.AccordionControl();
+            this.accordionControlElement1 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.item_runquery = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.item_writechanges = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlElement4 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.item_save = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.item_load = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.check_selectAll = new DevExpress.XtraEditors.CheckEdit();
             this.label_server = new DevExpress.XtraEditors.LabelControl();
@@ -45,17 +50,12 @@
             this.text_find = new DevExpress.XtraEditors.TextEdit();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.accordionControl1 = new DevExpress.XtraBars.Navigation.AccordionControl();
-            this.accordionControlElement1 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.item_runquery = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.item_writechanges = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement4 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.item_save = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.item_load = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.gridview = new DevExpress.XtraGrid.GridControl();
+            this.sub_gridview = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.fluentDesignFormContainer1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormContainer();
             this.fluentDesignFormControl1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormControl();
-            this.fluentDesignFormContainer1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridview)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sub_gridview)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.check_selectAll.Properties)).BeginInit();
@@ -63,41 +63,80 @@
             this.panel_find.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.text_replace.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.text_find.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridview)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sub_gridview)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            this.fluentDesignFormContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).BeginInit();
             this.SuspendLayout();
             // 
-            // fluentDesignFormContainer1
+            // accordionControl1
             // 
-            this.fluentDesignFormContainer1.Controls.Add(this.gridview);
-            this.fluentDesignFormContainer1.Controls.Add(this.panelControl1);
-            this.fluentDesignFormContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.fluentDesignFormContainer1.Location = new System.Drawing.Point(260, 27);
-            this.fluentDesignFormContainer1.Name = "fluentDesignFormContainer1";
-            this.fluentDesignFormContainer1.Size = new System.Drawing.Size(851, 621);
-            this.fluentDesignFormContainer1.TabIndex = 0;
+            this.accordionControl1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.accordionControl1.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
+            this.accordionControlElement1,
+            this.accordionControlElement4});
+            this.accordionControl1.Location = new System.Drawing.Point(0, 31);
+            this.accordionControl1.Name = "accordionControl1";
+            this.accordionControl1.OptionsMinimizing.NormalWidth = 260;
+            this.accordionControl1.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Touch;
+            this.accordionControl1.ShowFilterControl = DevExpress.XtraBars.Navigation.ShowFilterControl.Always;
+            this.accordionControl1.Size = new System.Drawing.Size(260, 621);
+            this.accordionControl1.TabIndex = 1;
+            this.accordionControl1.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
             // 
-            // gridview
+            // accordionControlElement1
             // 
-            this.gridview.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.gridview.Location = new System.Drawing.Point(6, 112);
-            this.gridview.MainView = this.sub_gridview;
-            this.gridview.Name = "gridview";
-            this.gridview.Size = new System.Drawing.Size(842, 509);
-            this.gridview.TabIndex = 3;
-            this.gridview.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.sub_gridview});
+            this.accordionControlElement1.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
+            this.item_runquery,
+            this.item_writechanges});
+            this.accordionControlElement1.Expanded = true;
+            this.accordionControlElement1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlElement1.ImageOptions.Image")));
+            this.accordionControlElement1.Name = "accordionControlElement1";
+            this.accordionControlElement1.Text = "Database";
             // 
-            // sub_gridview
+            // item_runquery
             // 
-            this.sub_gridview.GridControl = this.gridview;
-            this.sub_gridview.Name = "sub_gridview";
-            this.sub_gridview.OptionsView.ColumnAutoWidth = false;
-            this.sub_gridview.RowCellStyle += new DevExpress.XtraGrid.Views.Grid.RowCellStyleEventHandler(this.sub_gridview_RowCellStyle);
-            this.sub_gridview.PopupMenuShowing += new DevExpress.XtraGrid.Views.Grid.PopupMenuShowingEventHandler(this.sub_gridview_PopupMenuShowing);
-            this.sub_gridview.CellValueChanged += new DevExpress.XtraGrid.Views.Base.CellValueChangedEventHandler(this.sub_gridview_CellValueChanged);
+            this.item_runquery.Name = "item_runquery";
+            this.item_runquery.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.item_runquery.Text = "Query current database";
+            this.item_runquery.Click += new System.EventHandler(this.item_runquery_Click);
+            // 
+            // item_writechanges
+            // 
+            this.item_writechanges.Name = "item_writechanges";
+            this.item_writechanges.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.item_writechanges.Text = "Write Changes";
+            this.item_writechanges.Click += new System.EventHandler(this.item_writechanges_Click);
+            // 
+            // accordionControlElement4
+            // 
+            this.accordionControlElement4.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
+            this.item_save,
+            this.item_load});
+            this.accordionControlElement4.Expanded = true;
+            this.accordionControlElement4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlElement4.ImageOptions.Image")));
+            this.accordionControlElement4.Name = "accordionControlElement4";
+            this.accordionControlElement4.Text = "File";
+            // 
+            // item_save
+            // 
+            this.item_save.Name = "item_save";
+            this.item_save.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.item_save.Text = "Save";
+            this.item_save.Click += new System.EventHandler(this.item_save_Click);
+            // 
+            // item_load
+            // 
+            this.item_load.Name = "item_load";
+            this.item_load.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.item_load.Text = "Load";
+            this.item_load.Click += new System.EventHandler(this.item_load_Click);
+            // 
+            // ribbonPage2
+            // 
+            this.ribbonPage2.Name = "ribbonPage2";
+            this.ribbonPage2.Text = "ribbonPage2";
             // 
             // panelControl1
             // 
@@ -111,7 +150,7 @@
             this.panelControl1.Controls.Add(this.panel_find);
             this.panelControl1.Location = new System.Drawing.Point(6, 6);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(842, 100);
+            this.panelControl1.Size = new System.Drawing.Size(851, 141);
             this.panelControl1.TabIndex = 2;
             // 
             // check_selectAll
@@ -174,7 +213,7 @@
             this.panel_find.Controls.Add(this.text_find);
             this.panel_find.Controls.Add(this.labelControl4);
             this.panel_find.Controls.Add(this.labelControl3);
-            this.panel_find.Location = new System.Drawing.Point(388, 13);
+            this.panel_find.Location = new System.Drawing.Point(401, 5);
             this.panel_find.Name = "panel_find";
             this.panel_find.Size = new System.Drawing.Size(445, 82);
             this.panel_find.TabIndex = 7;
@@ -237,68 +276,45 @@
             this.labelControl3.TabIndex = 5;
             this.labelControl3.Text = "Find:";
             // 
-            // accordionControl1
+            // gridview
             // 
-            this.accordionControl1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.accordionControl1.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
-            this.accordionControlElement1,
-            this.accordionControlElement4});
-            this.accordionControl1.Location = new System.Drawing.Point(0, 27);
-            this.accordionControl1.Name = "accordionControl1";
-            this.accordionControl1.OptionsMinimizing.NormalWidth = 260;
-            this.accordionControl1.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Touch;
-            this.accordionControl1.ShowFilterControl = DevExpress.XtraBars.Navigation.ShowFilterControl.Always;
-            this.accordionControl1.Size = new System.Drawing.Size(260, 621);
-            this.accordionControl1.TabIndex = 1;
-            this.accordionControl1.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
+            this.gridview.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.gridview.Location = new System.Drawing.Point(6, 169);
+            this.gridview.MainView = this.gridView1;
+            this.gridview.Name = "gridview";
+            this.gridview.Size = new System.Drawing.Size(851, 449);
+            this.gridview.TabIndex = 3;
+            this.gridview.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.sub_gridview,
+            this.gridView1});
             // 
-            // accordionControlElement1
+            // sub_gridview
             // 
-            this.accordionControlElement1.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
-            this.item_runquery,
-            this.item_writechanges});
-            this.accordionControlElement1.Expanded = true;
-            this.accordionControlElement1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlElement1.ImageOptions.Image")));
-            this.accordionControlElement1.Name = "accordionControlElement1";
-            this.accordionControlElement1.Text = "Database";
+            this.sub_gridview.GridControl = this.gridview;
+            this.sub_gridview.Name = "sub_gridview";
+            this.sub_gridview.OptionsView.ColumnAutoWidth = false;
+            this.sub_gridview.OptionsView.ShowGroupPanel = false;
+            this.sub_gridview.RowCellStyle += new DevExpress.XtraGrid.Views.Grid.RowCellStyleEventHandler(this.sub_gridview_RowCellStyle);
+            this.sub_gridview.PopupMenuShowing += new DevExpress.XtraGrid.Views.Grid.PopupMenuShowingEventHandler(this.sub_gridview_PopupMenuShowing);
+            this.sub_gridview.CellValueChanged += new DevExpress.XtraGrid.Views.Base.CellValueChangedEventHandler(this.sub_gridview_CellValueChanged);
             // 
-            // item_runquery
+            // gridView1
             // 
-            this.item_runquery.Name = "item_runquery";
-            this.item_runquery.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.item_runquery.Text = "Query current database";
-            this.item_runquery.Click += new System.EventHandler(this.item_runquery_Click);
+            this.gridView1.GridControl = this.gridview;
+            this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsView.ShowGroupPanel = false;
             // 
-            // item_writechanges
+            // fluentDesignFormContainer1
             // 
-            this.item_writechanges.Name = "item_writechanges";
-            this.item_writechanges.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.item_writechanges.Text = "Write Changes";
-            this.item_writechanges.Click += new System.EventHandler(this.item_writechanges_Click);
-            // 
-            // accordionControlElement4
-            // 
-            this.accordionControlElement4.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
-            this.item_save,
-            this.item_load});
-            this.accordionControlElement4.Expanded = true;
-            this.accordionControlElement4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlElement4.ImageOptions.Image")));
-            this.accordionControlElement4.Name = "accordionControlElement4";
-            this.accordionControlElement4.Text = "File";
-            // 
-            // item_save
-            // 
-            this.item_save.Name = "item_save";
-            this.item_save.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.item_save.Text = "Save";
-            this.item_save.Click += new System.EventHandler(this.item_save_Click);
-            // 
-            // item_load
-            // 
-            this.item_load.Name = "item_load";
-            this.item_load.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.item_load.Text = "Load";
-            this.item_load.Click += new System.EventHandler(this.item_load_Click);
+            this.fluentDesignFormContainer1.Controls.Add(this.gridview);
+            this.fluentDesignFormContainer1.Controls.Add(this.panelControl1);
+            this.fluentDesignFormContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.fluentDesignFormContainer1.Location = new System.Drawing.Point(260, 31);
+            this.fluentDesignFormContainer1.Name = "fluentDesignFormContainer1";
+            this.fluentDesignFormContainer1.Size = new System.Drawing.Size(860, 621);
+            this.fluentDesignFormContainer1.TabIndex = 0;
             // 
             // fluentDesignFormControl1
             // 
@@ -307,15 +323,15 @@
             this.fluentDesignFormControl1.Location = new System.Drawing.Point(0, 0);
             this.fluentDesignFormControl1.Name = "fluentDesignFormControl1";
             this.fluentDesignFormControl1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.fluentDesignFormControl1.Size = new System.Drawing.Size(1111, 27);
-            this.fluentDesignFormControl1.TabIndex = 2;
+            this.fluentDesignFormControl1.Size = new System.Drawing.Size(1120, 31);
+            this.fluentDesignFormControl1.TabIndex = 4;
             this.fluentDesignFormControl1.TabStop = false;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1111, 648);
+            this.ClientSize = new System.Drawing.Size(1120, 652);
             this.ControlContainer = this.fluentDesignFormContainer1;
             this.Controls.Add(this.fluentDesignFormContainer1);
             this.Controls.Add(this.accordionControl1);
@@ -323,12 +339,12 @@
             this.FluentDesignFormControl = this.fluentDesignFormControl1;
             this.Name = "MainForm";
             this.NavigationControl = this.accordionControl1;
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Datafeed Tool";
+            this.Text = "Datafeed Tool 2.0";
+            this.TransparencyKey = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(255)))));
             this.Load += new System.EventHandler(this.MainForm_Load);
-            this.fluentDesignFormContainer1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridview)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sub_gridview)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             this.panelControl1.PerformLayout();
@@ -338,36 +354,41 @@
             this.panel_find.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.text_replace.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.text_find.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridview)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sub_gridview)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            this.fluentDesignFormContainer1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormContainer fluentDesignFormContainer1;
         private DevExpress.XtraBars.Navigation.AccordionControl accordionControl1;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement1;
-        private DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormControl fluentDesignFormControl1;
         private DevExpress.XtraBars.Navigation.AccordionControlElement item_runquery;
         private DevExpress.XtraBars.Navigation.AccordionControlElement item_writechanges;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement4;
         private DevExpress.XtraBars.Navigation.AccordionControlElement item_save;
         private DevExpress.XtraBars.Navigation.AccordionControlElement item_load;
+        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage2;
         private DevExpress.XtraEditors.PanelControl panelControl1;
-        private DevExpress.XtraEditors.ComboBoxEdit cb_database;
-        private DevExpress.XtraEditors.LabelControl label_server;
-        private DevExpress.XtraEditors.LabelControl labelControl2;
-        private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraGrid.GridControl gridview;
         private DevExpress.XtraGrid.Views.Grid.GridView sub_gridview;
         private DevExpress.XtraEditors.CheckEdit check_selectAll;
-        private DevExpress.XtraEditors.LabelControl labelControl3;
-        private DevExpress.XtraEditors.TextEdit text_replace;
-        private DevExpress.XtraEditors.TextEdit text_find;
-        private DevExpress.XtraEditors.SimpleButton btn_replace;
-        private DevExpress.XtraEditors.SimpleButton btn_find;
-        private DevExpress.XtraEditors.LabelControl labelControl4;
+        private DevExpress.XtraEditors.LabelControl label_server;
+        private DevExpress.XtraEditors.LabelControl labelControl2;
+        private DevExpress.XtraEditors.LabelControl labelControl1;
+        private DevExpress.XtraEditors.ComboBoxEdit cb_database;
         private System.Windows.Forms.Panel panel_find;
+        private DevExpress.XtraEditors.SimpleButton btn_replace;
+        private DevExpress.XtraEditors.TextEdit text_replace;
+        private DevExpress.XtraEditors.SimpleButton btn_find;
+        private DevExpress.XtraEditors.TextEdit text_find;
+        private DevExpress.XtraEditors.LabelControl labelControl4;
+        private DevExpress.XtraEditors.LabelControl labelControl3;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormContainer fluentDesignFormContainer1;
+        private DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormControl fluentDesignFormControl1;
     }
 }

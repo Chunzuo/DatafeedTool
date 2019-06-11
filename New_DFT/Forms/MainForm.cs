@@ -287,7 +287,7 @@ Use {0};
                         while (reader.Read())
                         {
                             DatafeedResult result = new DatafeedResult();
-                            result.Selected = false;
+                            //result.Selected = false;
                             result.DatafeedID = reader[0].ToString();
                             result.Guid = reader[1].ToString();
                             result.DatafeedName = reader[2].ToString();
@@ -345,7 +345,7 @@ Use {0};
                 {
                     menu.Items.Clear();
                 }
-                if (menu.Column.AbsoluteIndex > 3)
+                if (menu.Column.AbsoluteIndex > 2)
                 {
                     DXMenuItem item = new DXMenuItem("Clear data", onClickClearColumn);
                     item.Tag = new MenuColumnInfo(menu.Column);
@@ -365,92 +365,92 @@ Use {0};
 
             foreach (DatafeedResult result in mQueryResult)
             {
-                if (columnIndex == 4)
+                if (columnIndex == 3)
                 {
                     result.SecurityUsername = "";
                     columnName = "Security Username";
                 }
-                if (columnIndex == 5)
+                if (columnIndex == 4)
                 {
                     result.SecurityPassword = "";
                     columnName = "Security Password";
                 }
-                if (columnIndex == 6)
+                if (columnIndex == 5)
                 {
                     result.TransportUsername = "";
                     columnName = "Transport username";
                 }
-                if (columnIndex == 7)
+                if (columnIndex == 6)
                 {
                     result.TransportPassword = "";
                     columnName = "Transport Password";
                 }
-                if (columnIndex == 8)
+                if (columnIndex == 7)
                 {
                     result.TransportURL = "";
                     columnName = "Transport URL";
                 }
-                if (columnIndex == 9)
+                if (columnIndex == 8)
                 {
                     result.TransportInstance = "";
                     columnName = "Transport Instance";
                 }
-                if (columnIndex == 10)
+                if (columnIndex == 9)
                 {
                     result.SecurityDomain = "";
                     columnName = "Security Domain";
                 }
-                if (columnIndex == 11)
+                if (columnIndex == 10)
                 {
                     result.TransportDomain = "";
                     columnName = "Transport Domain";
                 }
-                if (columnIndex == 12)
+                if (columnIndex == 11)
                 {
                     result.ProxyOption = "";
                     columnName = "Proxy Option";
                 }
-                if (columnIndex == 13)
+                if (columnIndex == 12)
                 {
                     result.ProxyName = "";
                     columnName = "Proxy Name";
                 }
-                if (columnIndex == 14)
+                if (columnIndex == 13)
                 {
                     result.ProxyPort = "";
                     columnName = "Proxy port";
                 }
-                if (columnIndex == 15)
+                if (columnIndex == 14)
                 {
                     result.ProxyDomain = "";
                     columnName = "Proxy domain";
                 }
-                if (columnIndex == 16)
+                if (columnIndex == 15)
                 {
                     result.ProxyUserName = "";
                     columnName = "Proxy username";
                 }
-                if (columnIndex == 17)
+                if (columnIndex == 16)
                 {
                     result.ProxyPassword = "";
                     columnName = "Proxy password";
                 }
-                if (columnIndex == 18)
+                if (columnIndex == 17)
                 {
                     result.TransportPath = "";
                     columnName = "Transport Path";
                 }
-                if (columnIndex == 19)
+                if (columnIndex == 18)
                 {
                     result.ConnectionString = "";
                     columnName = "Connection String";
                 }
-                if (columnIndex == 20)
+                if (columnIndex == 19)
                 {
                     result.SQLQueryUsername = "";
                     columnName = "SQLQUery username";
                 }
-                if (columnIndex == 21)
+                if (columnIndex == 20)
                 {
                     result.SQLQueryPassword = "";
                     columnName = "SQLQUery password";
@@ -480,7 +480,7 @@ Use {0};
 
             foreach (DatafeedResult item in (List<DatafeedResult>)gridview.DataSource)
             {
-                if (item.Selected)
+                //if (item.Selected)
                 {
                     isUpdate = true;
 
@@ -587,7 +587,7 @@ Use {0};
             List<DatafeedResult> selectedRows = new List<DatafeedResult>();
             foreach (DatafeedResult item in (List<DatafeedResult>)gridview.DataSource)
             {
-                if (item.Selected)
+                //if (item.Selected)
                 {
                     selectedRows.Add(item);
                 }
@@ -674,7 +674,7 @@ Use {0};
         {
             foreach (DatafeedResult item in (List<DatafeedResult>)gridview.DataSource)
             {
-                item.Selected = check_selectAll.Checked;
+                //item.Selected = check_selectAll.Checked;
             }
             sub_gridview.RefreshData();
         }
@@ -858,8 +858,7 @@ Use {0};
                 if (e.RowHandle == cellInfo.Row && e.Column.AbsoluteIndex == cellInfo.Column)
                 {
                     e.Appearance.BackColor = Color.LightPink;
-                    //e.Appearance.BackColor = Color.FromArgb(150, Color.Salmon);
-                    //e.Appearance.BackColor2 = Color.White;
+
                 }
             }
         }

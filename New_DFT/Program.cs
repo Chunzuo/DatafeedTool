@@ -21,7 +21,8 @@ namespace New_DFT
             Application.SetCompatibleTextRenderingDefault(false);
 
             BonusSkins.Register();
-            Application.Run(new MainForm());
+            //Application.Run(new MainForm());
+            Application.Run(new DFT2_Form());
         }
     }
 }

@@ -8,7 +8,7 @@ namespace New_DFT.Models
 {
     class DatafeedResult
     {
-        public bool Selected { get; set; }
+        //public bool Selected { get; set; }
         public string DatafeedID { get; set; }
         public string Guid { get; set; }
         public string DatafeedName { get; set; }
