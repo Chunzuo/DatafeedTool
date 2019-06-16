@@ -31,7 +31,7 @@ namespace New_DFT.Models
             }
             catch (Exception ex)
             {
-                XtraMessageBox.Show("Error", ex.Message, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //XtraMessageBox.Show("Error", ex.Message, MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return null;
             }
         }

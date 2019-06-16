@@ -51,8 +51,8 @@
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.gridview = new DevExpress.XtraGrid.GridControl();
-            this.sub_gridview = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.sub_gridview = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.fluentDesignFormContainer1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormContainer();
             this.fluentDesignFormControl1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormControl();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
@@ -64,8 +64,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.text_replace.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.text_find.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridview)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sub_gridview)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sub_gridview)).BeginInit();
             this.fluentDesignFormContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).BeginInit();
             this.SuspendLayout();
@@ -287,8 +287,14 @@
             this.gridview.Size = new System.Drawing.Size(851, 449);
             this.gridview.TabIndex = 3;
             this.gridview.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.sub_gridview,
-            this.gridView1});
+            this.gridView1,
+            this.sub_gridview});
+            // 
+            // gridView1
+            // 
+            this.gridView1.GridControl = this.gridview;
+            this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsView.ShowGroupPanel = false;
             // 
             // sub_gridview
             // 
@@ -299,12 +305,6 @@
             this.sub_gridview.RowCellStyle += new DevExpress.XtraGrid.Views.Grid.RowCellStyleEventHandler(this.sub_gridview_RowCellStyle);
             this.sub_gridview.PopupMenuShowing += new DevExpress.XtraGrid.Views.Grid.PopupMenuShowingEventHandler(this.sub_gridview_PopupMenuShowing);
             this.sub_gridview.CellValueChanged += new DevExpress.XtraGrid.Views.Base.CellValueChangedEventHandler(this.sub_gridview_CellValueChanged);
-            // 
-            // gridView1
-            // 
-            this.gridView1.GridControl = this.gridview;
-            this.gridView1.Name = "gridView1";
-            this.gridView1.OptionsView.ShowGroupPanel = false;
             // 
             // fluentDesignFormContainer1
             // 
@@ -355,8 +355,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.text_replace.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.text_find.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridview)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sub_gridview)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sub_gridview)).EndInit();
             this.fluentDesignFormContainer1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).EndInit();
             this.ResumeLayout(false);

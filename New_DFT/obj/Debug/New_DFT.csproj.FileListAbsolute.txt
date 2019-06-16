@@ -598,3 +598,6 @@ E:\DatafeedTool\New_DFT\New_DFT\bin\Debug\es\DevExpress.Diagram.v18.1.Core.resou
 E:\DatafeedTool\New_DFT\New_DFT\bin\Debug\ja\DevExpress.Diagram.v18.1.Core.resources.dll
 E:\DatafeedTool\New_DFT\New_DFT\bin\Debug\ru\DevExpress.Diagram.v18.1.Core.resources.dll
 E:\DatafeedTool\New_DFT\New_DFT\obj\Debug\New_DFT.Forms.DFT2_Form.resources
+E:\DatafeedTool\New_DFT\New_DFT\obj\Debug\New_DFT.Forms.FindReplaceForm.resources
+E:\DatafeedTool\New_DFT\New_DFT\bin\Debug\DevExpress.XtraCharts.v18.1.UI.dll
+E:\DatafeedTool\New_DFT\New_DFT\bin\Debug\DevExpress.XtraCharts.v18.1.UI.xml

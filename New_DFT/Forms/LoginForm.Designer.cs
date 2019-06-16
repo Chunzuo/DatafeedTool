@@ -155,6 +155,7 @@
             this.tb_password.Name = "tb_password";
             this.tb_password.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_password.Properties.Appearance.Options.UseFont = true;
+            this.tb_password.Properties.UseSystemPasswordChar = true;
             this.tb_password.Size = new System.Drawing.Size(245, 26);
             this.tb_password.TabIndex = 4;
             // 
@@ -190,9 +191,9 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(4, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(147, 19);
+            this.label1.Size = new System.Drawing.Size(161, 19);
             this.label1.TabIndex = 6;
-            this.label1.Text = "Datafeed Tool - 2.0";
+            this.label1.Text = "Datafeed Tool - 2.0.4";
             // 
             // LoginForm
             // 
